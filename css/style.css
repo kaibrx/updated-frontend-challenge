@@ -5,7 +5,6 @@
 body {
   background-color: black;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 12px;
 }
 
 .container {
@@ -19,24 +18,17 @@ body {
   width: 100%;
 }
 
-.arrow {
-  font-size: 12px;
-  color: #007AFF;
-  float: left;
-  padding-left: 8px;
-}
-
 .navbar {
   height: auto;
   width: auto;
 }
 
 h1 {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
   padding-top: 2px;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
 }
 
 ul {
@@ -45,12 +37,6 @@ ul {
 
 li {
   list-style-type: none;
-}
-
-h2 {
-  font-size: 14px;
-  font-weight: bold;
-  text-align: left;
 }
 
 .buses {
@@ -62,6 +48,10 @@ h2 {
 .busroute {
   border-bottom: 1px solid #D8D8D8;
   padding-bottom: 7px;
+}
+
+.busroute li {
+  display: inline;
 }
 
 .frequency {
@@ -80,7 +70,7 @@ h2 {
 }
 
 .destination {
-  text-transform: uppercase;
+  font-weight: bold;
   display: inline;
 }
 
@@ -88,68 +78,58 @@ h2 {
   text-align: left;
 }
 
-.eta {
-  text-align: right;
+.out-of-service {
+  float: right;
+  color: grey;
   padding-right: 25px;
-  font-weight: lighter;
 }
 
-#out-of-service {
-  border-radius: 20px;
-  width: 24%;
-  text-align: left;
-  background-color: #E5E5E5;
-  padding-left: 5px;
+.eastbound {
+  float: right;
+  color: #A53ED6;
+  padding-right: 25px;
   font-weight: 500;
+  font-size: 18px;
 }
 
-#eastbound {
-  border-radius: 20px;
-  width: 18%;
-  text-align: left;
-  background-color: #D0D8F3;
-  padding-left: 4px;
+.northbound {
+  float: right;
+  color: #41B855;
+  padding-right: 25px;
   font-weight: 500;
+  font-size: 18px;
 }
 
-#northbound {
-  border-radius: 20px;
-  width: 21%;
-  text-align: left;
-  background-color: #D5F3D0;
-  padding-left: 4px;
+.southbound {
+  float: right;
+  color: #3EBAD6;
+  padding-right: 25px;
   font-weight: 500;
+  font-size: 18px;
 }
 
-#southbound {
-  border-radius: 20px;
-  width: 20%;
-  text-align: left;
-  background-color: #D0EEF3;
-  padding-left: 3px;
-  font-weight: 500;
-}
-
-#reroute {
-  border-radius: 20px;
-  width: 14%;
-  text-align: left;
-  background-color: #F3E5D0;
-  padding-left: 4px;
-  font-weight: 500;
+.reroute {
+  float: right;
+  color: grey;
+  padding-right: 25px;
 }
 
 .footer {
   text-align: center;
-  font-weight: lighter;
+  color: grey;
   background-color: #EFEFEF;
 }
 
 .footer li {
   display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 5%;
+}
+
+.footer p {
+  padding-top: 15%;
+  font-size: 10px;
 }
 
 .footer img {
